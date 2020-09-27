@@ -8,7 +8,12 @@ export default function TodoList() {
   return (
     <ListGroup>
       {todos.map((todo) => (
-        <Todo todo={todo.todo} completed={todo.completed} id={todo.id} />
+        <Todo
+          todo={todo.todo}
+          completed={todo.completed}
+          id={todo.id}
+          key={todo.id}
+        />
       ))}
     </ListGroup>
   );

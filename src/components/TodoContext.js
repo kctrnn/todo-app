@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+const LOCAL_STORAGE_KEY = 'todo-app-local-storage';
 
 export const TodoContext = React.createContext();
 
 export function TodoProvider(props) {
-  const [todos, setTodos] = useState([
-    { todo: 'Hanhiu', completed: false, id: 0 },
-    { todo: 'Hoian', completed: true, id: 1 },
-    { todo: 'Kimchan', completed: false, id: 2 },
-  ]);
+  const [todos, setTodos] = useState(
+    JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY)) || []
+  );
   const [todo, setTodo] = useState('');
+
+  // when todos[] is changed
+  useEffect(() => {
+    localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos));
+  }, [todos]);
 
   function handleInputChange(event) {
     setTodo(event.target.value);
@@ -23,11 +27,12 @@ export function TodoProvider(props) {
     setTodo('');
   }
 
-  function markCompleted(id) {
-    setTodos((todos) =>
+  function markChecked(id) {
+    setTodos(
       todos.map((todo) => {
         if (todo.id === id) {
           todo.completed = !todo.completed;
+          console.log(id);
         }
         return todo;
       })
@@ -46,7 +51,7 @@ export function TodoProvider(props) {
         handleInputChange,
         addTodo,
         deleteTodo,
-        markCompleted,
+        markChecked,
       }}
     >
       {props.children}

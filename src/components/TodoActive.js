@@ -10,7 +10,12 @@ export default function TodoActive() {
       {todos.map(
         (todo) =>
           !todo.completed && (
-            <Todo todo={todo.todo} completed={todo.completed} id={todo.id} />
+            <Todo
+              todo={todo.todo}
+              completed={todo.completed}
+              id={todo.id}
+              key={todo.id}
+            />
           )
       )}
     </ListGroup>

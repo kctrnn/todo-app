@@ -8,17 +8,20 @@ import TodoCompleted from './TodoCompleted';
 
 export default function TodoApp() {
   return (
-    <Tabs defaultActiveKey='all'>
-      <Tab eventKey='all' title='All'>
-        <TodoForm />
-        <TodoList />
-      </Tab>
-      <Tab eventKey='active' title='Active'>
-        <TodoActive />
-      </Tab>
-      <Tab eventKey='completed' title='Completed'>
-        <TodoCompleted />
-      </Tab>
-    </Tabs>
+    <div className='TodoApp mt-5'>
+      <Tabs defaultActiveKey='all' className='d-flex'>
+        <Tab eventKey='all' title='All'>
+          <TodoForm />
+          <TodoList />
+        </Tab>
+        <Tab eventKey='active' title='Active'>
+          <TodoForm />
+          <TodoActive />
+        </Tab>
+        <Tab eventKey='completed' title='Completed'>
+          <TodoCompleted />
+        </Tab>
+      </Tabs>
+    </div>
   );
 }

@@ -1,21 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 14px !important;
 }
 
 .title {
+  margin-top: 30px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
   font-size: 36px;
 }
 
-input {
-  font-size: 14px !important;
+/* TABS */
+.nav-tabs {
+  margin-bottom: 20px !important;
 }
 
-button {
-  font-size: 14px !important;
-  font-weight: 600 !important;
+.nav-item {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-link {
+  border: 0 !important;
+  color: #333 !important;
+  font-weight: 600;
+}
+
+.nav-link.active {
+  border-bottom: 3px solid #177bff !important;
+}
+
+/* LIST-GROUP */
+.list-group-item {
+  border: 0 !important;
+}
+
+.form-check-input {
+  width: 20px;
+  height: 20px;
+}
+
+.form-check-label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* BTN-DELETE */
+.btn-link {
+  color: #000 !important;
+  opacity: 0.5;
+  padding: 0 !important;
+}
+
+.btn-link:hover {
+  opacity: 0.8 !important;
 }

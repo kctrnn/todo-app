@@ -1,6 +1,32 @@
-import React from 'react';
-import { ListGroup } from 'react-bootstrap';
+import React, { useContext } from 'react';
+import { ListGroup, Row, Col, Form, Button } from 'react-bootstrap';
+import DeleteOutlineIcon from '@material-ui/icons/DeleteOutline';
+import { TodoContext } from './TodoContext';
 
 export default function Todo({ todo, completed, id }) {
-  return <ListGroup.Item>{todo}</ListGroup.Item>;
+  const { markChecked, deleteTodo } = useContext(TodoContext);
+  return (
+    <ListGroup.Item className='px-0'>
+      <Row>
+        <Col xs={11}>
+          <Form.Check className='d-flex align-items-center'>
+            <Form.Check.Input
+              className='mt-0'
+              onChange={() => markChecked(id)}
+              checked={completed}
+            />
+            <Form.Check.Label className='ml-3'>
+              {completed ? <s>{todo}</s> : todo}
+            </Form.Check.Label>
+          </Form.Check>
+        </Col>
+
+        <Col xs={1} className='px-0'>
+          <Button variant='link' onClick={() => deleteTodo(id)}>
+            <DeleteOutlineIcon />
+          </Button>
+        </Col>
+      </Row>
+    </ListGroup.Item>
+  );
 }
