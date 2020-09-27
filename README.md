@@ -18,7 +18,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://res.cloudinary.com/hanhiu/image/upload/v1601192380/product-screenshot/todoapp_keqeeh.png)
+<img src="todoapp.png">
 
 ### Built With
 * [React](https://reactjs.org)
