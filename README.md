@@ -4,7 +4,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## TODO APP
 
 <img src="todoapp.png">
 
