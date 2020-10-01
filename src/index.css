@@ -57,3 +57,17 @@ body {
 .btn-link:hover {
   opacity: 0.8 !important;
 }
+
+input.form-control {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+
+  padding: 20px 12px;
+}
+
+.btn.btn-primary {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  height: 100%;
+}
