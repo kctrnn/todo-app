@@ -15,8 +15,14 @@ export default function Todo({ todo, completed, id }) {
               onChange={() => markChecked(id)}
               checked={completed}
             />
-            <Form.Check.Label className='ml-3'>
-              {completed ? <s>{todo}</s> : todo}
+            <Form.Check.Label
+              className='ml-3'
+              style={{
+                textDecoration: completed ? 'line-through' : 'none',
+                color: completed ? '#333' : '#000',
+              }}
+            >
+              {todo}
             </Form.Check.Label>
           </Form.Check>
         </Col>
