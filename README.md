@@ -6,8 +6,6 @@
 <!-- ABOUT THE PROJECT -->
 ## TODO APP
 
-<img src="todoapp.png">
-
 ### Built With
 * [React](https://reactjs.org)
 * [React-Bootstrap](https://react-bootstrap.github.io)
