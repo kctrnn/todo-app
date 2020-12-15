@@ -1,61 +1,92 @@
+<!-- Please update value in the {}  -->
+
+<h1 align="center">Todo app</h1>
+
+<div align="center">
+   Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+</div>
+
+<div align="center">
+  <h3>
+    <a href="https://kctrnn-todo-app.netlify.app/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="#">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://devchallenges.io/challenges/hH6PbOHBdPm6otzw2De5">
+      Challenge
+    </a>
+  </h3>
+</div>
+
 <!-- TABLE OF CONTENTS -->
 
+## Table of Contents
 
+- [Overview](#overview)
+  - [Built With](#built-with)
+- [Features](#features)
+- [How to use](#how-to-use)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
+<!-- OVERVIEW -->
 
-<!-- ABOUT THE PROJECT -->
-## TODO APP
+## Overview
+
+![screenshot](https://user-images.githubusercontent.com/70143270/102244705-36c7ab00-3f2f-11eb-9b2d-981b9357dbb9.png)
+
+<!-- Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+
+- Where can I see your demo?
+- What was your experience?
+- What have you learned/improved?
+- Your wisdom? :) -->
 
 ### Built With
-* [React](https://reactjs.org)
-* [React-Bootstrap](https://react-bootstrap.github.io)
 
-<!-- GETTING STARTED -->
-## Getting Started
+<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-### Prerequisites
+- [React](https://reactjs.org/)
+- [Bootstrap](https://getbootstrap.com/)
 
-* npm
-```sh
-npm install npm@latest -g
+## Features
+
+<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
+
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hH6PbOHBdPm6otzw2De5) was to build an application to complete the given user stories.
+
+## How To Use
+
+<!-- Example: -->
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/kctrnn/todo-app.git
+
+# Install dependencies
+$ npm install
+
+# Run the app
+$ npm start
 ```
 
-### Installation
+## Acknowledgements
 
-1. Clone the repo
-```sh
-git clone https://github.com/kctrnn/todo-app.git
-```
-2. Install NPM packages
-```sh
-npm install
-```
+<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
-<!-- USAGE EXAMPLES -->
-## Usage
+- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
+- [Node.js](https://nodejs.org/)
+- [Marked - a markdown parser](https://github.com/chjj/marked)
 
-```sh
-npm start
-```
-
-<!-- ROADMAP -->
-
-<!-- CONTRIBUTING -->
-
-
-<!-- LICENSE -->
-<!-- CONTACT -->
 ## Contact
 
-Your Name - [@Kim Chan](https://www.facebook.com/kctrnn) - kctrnn@gmail.com
+<!-- - Website [your-website.com](https://{your-web-site-link}) -->
 
-Project Link: [https://github.com/kctrnn/todo-app.git](https://github.com/kctrnn/todo-app.git)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [Material Icons](https://google.github.io/material-design-icons)
-
-
-
+- GitHub [kctrnn](https://github.com/kctrnn)
+<!-- - Twitter [@your-twitter](https://{twitter.com/your-username}) -->
