@@ -12,9 +12,9 @@
       Demo
     </a>
     <span> | </span>
-    <a href="#">
+<!--     <a href="#">
       Solution
-    </a>
+    </a> -->
     <span> | </span>
     <a href="https://devchallenges.io/challenges/hH6PbOHBdPm6otzw2De5">
       Challenge
@@ -89,4 +89,5 @@ $ npm start
 <!-- - Website [your-website.com](https://{your-web-site-link}) -->
 
 - GitHub [kctrnn](https://github.com/kctrnn)
+- Linkedin [kctrnn](https://www.linkedin.com/in/kctrnn/)
 <!-- - Twitter [@your-twitter](https://{twitter.com/your-username}) -->
