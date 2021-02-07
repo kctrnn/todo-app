@@ -1,0 +1,37 @@
+.todo-tab {
+  display: flex;
+  justify-content: space-around;
+
+  padding-top: 3.5rem;
+
+  border-bottom: 1px solid #bdbdbd;
+
+  & > a {
+    color: #333;
+    font-weight: 600;
+    padding-bottom: 1.8rem;
+    width: 8rem;
+    text-align: center;
+
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+
+      width: 0;
+      height: 3px;
+      border-radius: 4px 4px 0px 0px;
+
+      transition: all 200ms linear;
+    }
+  }
+
+  & > a.active::after {
+    width: 100%;
+    left: 0;
+    background-color: #2f80ed;
+  }
+}

@@ -1,21 +1,23 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import TodoList from '../components/TodoList';
-import TodoForm from '../components/TodoForm';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
-import { addTodo, deleteTodo, toggleTodo } from '../todoSlice';
-import { setVisibilityFilter } from '../../../app/filterSlice';
-import TodoTab from '../components/TodoTab';
 
 import TodoFilters from '../../../constants/TodoFilters';
 
-MainPage.propTypes = {};
+import TodoForm from '../components/TodoForm';
+import TodoList from '../components/TodoList';
+import TodoTab from '../components/TodoTab';
 
-function MainPage(props) {
+import { addTodo, deleteTodo, toggleTodo } from '../todoSlice';
+import { setVisibilityFilter } from '../../../app/filterSlice';
+
+function MainPage() {
   const dispatch = useDispatch();
   const todos = useSelector((state) => state.todos);
   const filter = useSelector((state) => state.filter);
+
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos]);
 
   const visibleTodos = getVisibleTodos(todos, filter);
 
@@ -48,16 +50,22 @@ function MainPage(props) {
 
   return (
     <div className='todo-main'>
-      <h1>#Todos</h1>
+      <div className='container'>
+        <h1 className='todo-title'>#Todos</h1>
 
-      <TodoTab filter={filter} onFilterClick={handleFilterClick} />
+        <TodoTab filter={filter} onFilterClick={handleFilterClick} />
 
-      <TodoForm
-        onTodoAddClick={handleTodoAddClick}
-        onTodoDeleteClick={handleTodoDeleteClick}
-      />
+        {filter !== 'SHOW_COMPLETED' && (
+          <TodoForm onTodoAddClick={handleTodoAddClick} />
+        )}
 
-      <TodoList todoList={visibleTodos} onTodoClick={handleTodoClick} />
+        <TodoList
+          todoList={visibleTodos}
+          filter={filter}
+          onTodoClick={handleTodoClick}
+          onTodoDeleteClick={handleTodoDeleteClick}
+        />
+      </div>
     </div>
   );
 }

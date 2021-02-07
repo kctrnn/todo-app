@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-TodoForm.propTypes = {};
+import './TodoForm.scss';
+
+TodoForm.propTypes = {
+  onTodoAddClick: PropTypes.func.isRequired,
+};
 
 function TodoForm({ onTodoAddClick }) {
   const [text, setText] = useState('');
@@ -18,7 +22,7 @@ function TodoForm({ onTodoAddClick }) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className='todo-form' onSubmit={handleSubmit}>
       <input
         value={text}
         onChange={handleChange}
