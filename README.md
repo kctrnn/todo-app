@@ -65,6 +65,7 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 - [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
 - [Node.js](https://nodejs.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
 <!-- - [Marked - a markdown parser](https://github.com/chjj/marked) -->
 
 ## Contact
