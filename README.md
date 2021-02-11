@@ -72,5 +72,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 <!-- - Website [your-website.com](https://{your-web-site-link}) -->
 
-- GitHub [@your-username](https://github.com/kctrnn)
-- Twitter [@your-twitter](https://twitter.com/kctrnn)
+- GitHub [@kctrnn](https://github.com/kctrnn)
+- Twitter [@kctrnn](https://twitter.com/kctrnn)
