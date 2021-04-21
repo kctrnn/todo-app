@@ -39,6 +39,13 @@
 
 ![screenshot](https://user-images.githubusercontent.com/70143270/107603839-acff3a00-6c60-11eb-91ce-052894521e60.png)
 
+I built Todo app with Reactjs and Redux. Fulfill user stories below:
+- User story: I can add a new task
+- User story: I can complete a task
+- User story: I can toggle between All, Active and Completed
+- User story: I can remove one or all tasks under the Completed tab
+- User story: Store the data in local storage that when I refresh the page I can still see my progress
+
 <!-- Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
 - Where can I see your demo?
